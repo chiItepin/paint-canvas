@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+button {
+  border: none;
+  transition: opacity 0.2s ease;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+.canvas-box-tools {
+  position: absolute;
+  padding: 10px 20px;
+  top: 0;
+  left: 0;
+  background: rgb(253, 253, 253);
+  border-bottom: 2px solid rgb(235, 230, 235);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.right-group {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  border-radius: 2px;
+  padding: 5px;
+  min-width: 20px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.button.active {
+  box-shadow: 0 0 2px rgba(58, 58, 58, 0.747);
+}
+
+.button.red {
+  background: rgb(255, 189, 189);
+}
+
+.button.yellow {
+  background: rgb(255, 230, 166);
+}
+
+.button.green {
+  background: rgb(199, 233, 199);
+}
+
+.button.blue {
+  background: rgb(212, 212, 255);
+}
+
+.button.black {
+  background: rgb(129, 129, 129);
+}
